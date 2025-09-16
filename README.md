@@ -4,13 +4,14 @@
 
 > <b>자연어 처리 To-Do 앱</b>
 
-
+<img width="300" alt="61a5e812-00b3-401b-aeac-8bcf8b0878a5" src="https://github.com/user-attachments/assets/d81bc5b2-44f8-47a7-914b-57fb8524cf68" />
+<img width="300" alt="42caf02e-a2d1-4cdb-95de-ddae55cdca93" src="https://github.com/user-attachments/assets/43f45108-5daf-4c15-9741-56cc5fc52d3b" />
 
 ## 프로젝트 소개
 
 ### 개요
 - 플랫폼: 모바일(Android, iOS)
-- 사용 기술: Flutter, AWS, Python
+- 사용 기술: Flutter, AWS, Python, Amplify
 - 제작 기간: 4일
 - 제작 인원: 1명
   <table>
@@ -34,4 +35,5 @@
 - 일정 캘린더 뷰
 
 ### 구조도
+<img width="672" alt="f8f51b89-73e7-4d6b-8d5c-1985cda21af0" src="https://github.com/user-attachments/assets/fd4eab27-8c14-4dbd-b657-80acca7aa29d" />
 
