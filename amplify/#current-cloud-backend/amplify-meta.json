@@ -1,0 +1,89 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-schedulist-dev-8e640-authRole",
+      "UnauthRoleArn": "arn:aws:iam::278668560942:role/amplify-schedulist-dev-8e640-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::278668560942:role/amplify-schedulist-dev-8e640-authRole",
+      "Region": "ap-northeast-2",
+      "DeploymentBucketName": "amplify-schedulist-dev-8e640-deployment",
+      "UnauthRoleName": "amplify-schedulist-dev-8e640-unauthRole",
+      "StackName": "amplify-schedulist-dev-8e640",
+      "StackId": "arn:aws:cloudformation:ap-northeast-2:278668560942:stack/amplify-schedulist-dev-8e640/70579ab0-cefa-11ef-9d78-06ca3f76744d",
+      "AmplifyAppId": "d16rouy5mh3gqr"
+    }
+  },
+  "auth": {
+    "schedulistfbb48146": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [
+          "GOOGLE"
+        ],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-schedulist-dev-8e640-deployment/amplify-cfn-templates/auth/schedulistfbb48146-cloudformation-template.json",
+        "logicalId": "authschedulistfbb48146"
+      },
+      "lastPushTimeStamp": "2025-01-10T04:53:33.621Z",
+      "output": {
+        "UserPoolId": "ap-northeast-2_iqNDy44q9",
+        "AppClientIDWeb": "31c3qj07lss1o513m3kc6i093q",
+        "AppClientID": "6aoe669o67eklbtpvg4ik3b1fi",
+        "IdentityPoolId": "ap-northeast-2:c9d570f3-7571-4a57-be77-7c0a026afb66",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-northeast-2:278668560942:userpool/ap-northeast-2_iqNDy44q9",
+        "IdentityPoolName": "schedulistfbb48146_identitypool_fbb48146__dev",
+        "UserPoolName": "schedulistfbb48146_userpool_fbb48146",
+        "HostedUIDomain": "schedulist678ce1da-678ce1da-dev",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"myapp://\"],\"LogoutURLs\":[\"myapp://\"]}"
+      },
+      "lastPushDirHash": "6IIYSSSRuBAXzpk+2WpaleGLifA="
+    }
+  },
+  "api": {
+    "schedulist": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "uhtcgzbmnzhsba7h6y2momr2y4",
+        "GraphQLAPIEndpointOutput": "https://5pilv7co4rgqnmv2omglyyfqjq.appsync-api.ap-northeast-2.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-ixp6y2hvk5b7pdhert7jcolory"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-schedulist-dev-8e640-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apischedulist"
+      },
+      "lastPushTimeStamp": "2025-01-10T04:53:33.986Z",
+      "lastPushDirHash": "e5yI5iJ+Liyt6dmurMhUVIKxqTY="
+    }
+  }
+}
